@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  form {
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-file-upload {
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .custom-file-upload:hover {
+    background-color: #3498db;
+    color: #f9f9f9;
+  }
+
+  #imageInput {
+    display: none;
+  }
+
+  .submit-button {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #f9f9f9; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .submit-button:hover {
+    background-color: #2980b9;
+  }
+
+
+  .preview-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .preview {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
+  #imagePreview {
+    max-width: min(700px, calc(100vw - 30px));
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+  }
