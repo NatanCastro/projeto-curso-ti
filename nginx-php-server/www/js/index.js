@@ -19,18 +19,17 @@ imageInput.addEventListener('change', function() {
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault()
-  const formData = new FormData(form)
-  const imageUrl = await fetch('www.trabalho.local:3000/upload', {
+  const formData = new FormData()
+  formData.append('image', imageInput.files[0])
+  fetch('http://192.168.0.5:3000/upload', {
     method: 'POST',
     body: formData,
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  })
-  console.log(imageUrl)
-
-  await fetch('api/salvar-imagem.php', {
-    method: 'POST',
-    body: JSON.stringify({ imageUrl })
+  }).then((res) => {
+    if (res.status !== 201) {
+      throw new Error('não foi possivel fazer o upload da imagem tente novamente')
+    }
+    Response.redirect('http://192.168.0.5/galeria.php')
+  }).catch((e) => {
+    alert(e.message)
   })
 })

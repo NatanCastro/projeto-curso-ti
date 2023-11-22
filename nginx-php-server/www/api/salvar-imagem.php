@@ -1,6 +1,6 @@
 <?php
 
-$url = $_POST['imageUrl'];
+$url = $_POST['url'];
 
 $servername = "192.168.0.5";
 $username = "root";

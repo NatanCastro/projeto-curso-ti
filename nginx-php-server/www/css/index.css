@@ -6,13 +6,18 @@ body {
     font-weight: bold;
   }
 
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
   h1 {
     text-align: center;
     font-size: 40px;
-  }
+  } 
 
   form {
-    max-width: 200px;
+    max-width: 250px;
     margin: 0 auto;
     text-align: center;
     background-color: #f9f9f9;
@@ -22,15 +27,19 @@ body {
   }
 
   .custom-file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border: 2px solid #3498db;
     color: #3498db;
     background-color: #f9f9f9;
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
-    display: flex;
     margin-bottom: 20px;
     transition: all 0.3s ease;
+    font-size: 18px;
   }
 
   .custom-file-upload:hover {
@@ -43,7 +52,6 @@ body {
   }
 
   .submit-button {
-    display: flex;
     width: 100%;
     padding: 10px;
     background-color: #3498db;
@@ -54,6 +62,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
+    font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
@@ -81,3 +90,22 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
   }
+  
+  .button{
+    background-color: #3498db;
+    color: white;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 15px;
+  }
+
+  .button:hover{
+    background-color: #2980b9;
+}

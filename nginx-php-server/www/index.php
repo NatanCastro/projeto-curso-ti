@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <header>
+  <a href="/galeria.php"><button class="button">Galeria</button></a>
+  </header>
   <h1>Envie uma Imagem</h1>
 
   <form id="imageForm">

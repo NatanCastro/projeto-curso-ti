@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+.image{
+    border: 2px solid #becdd6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    max-width: 100%; /* Ajusta a largura da imagem para no máximo 100% do contêiner pai */
+    max-height: 300px; /* Define uma altura máxima para todas as imagens */
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+} 
+
+a img{
+    width: 70%;
+    height: 70%;
+}
+
+.download-button{
+    background-color: #3498db;
+    color: white;
+    padding: 4px 8px;
+    padding-right: 0%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    z-index: 1;
+}
+
+.download-button:hover{
+    background-color: #2980b9;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Cor de fundo vermelha mais escura no hover */
+}
+
+.image-container {
+    margin: 5px;
+    position: relative;
+    display: inline-block; /* ou flex, dependendo do layout desejado */
+
+    & > img {
+        width: 100%;
+    }
+
+    &:hover > .delete-button {
+        opacity: 1;
+    }
+    &:hover > .download-button {
+        opacity: 1;
+    }
+}
+
+.button{
+    background-color: #3498db;
+    color: white;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 15px;
+  }
+
+.button:hover{
+    background-color: #2980b9;
+}
