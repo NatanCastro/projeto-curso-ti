@@ -10,7 +10,7 @@ $ORIGIN trabalho.local.
                           2h         ; minimum ttl
                           )
           IN      NS      ns.trabalho.local.
-
 ns        IN      A       192.168.0.5
 
 www       IN      A       192.168.0.5
+db        IN      A       10.5.0.5

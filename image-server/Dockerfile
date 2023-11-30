@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm run build
+RUN apt-get update -y && apt-get install -y openssl
 
-CMD [ "npm", "run", "start:prod" ]
+CMD [ "npm", "run", "start:dev" ]

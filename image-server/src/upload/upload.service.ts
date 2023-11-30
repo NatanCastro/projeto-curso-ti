@@ -11,10 +11,10 @@ export class UploadService {
   async uploadFile(fileName: string, fileBuffer: Buffer) {
     const url = this.saveToDisk(fileName, fileBuffer)
 
-    return this.prismaService.imagens.create({ data: { url } })
+    return this.prismaService.images.create({ data: { url } })
   }
   saveToDisk(fileName: string, fileBuffer: Buffer) {
-    const newName = `${new Date()}${fileName}`
+    const newName = `${Date.now()}${fileName}`
     try {
       const path = `public/${newName}`
       writeFile(join(cwd(), path), fileBuffer, (err) => {

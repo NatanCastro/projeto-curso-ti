@@ -19,7 +19,7 @@
       Escolha uma imagem
       <input type="file" id="imageInput" name="image" accept="image/*" required>
     </label>
-    <input type="submit" value="Enviar Imagem" class="submit-button">
+    <input target="/galeria.php" type="submit" value="Enviar Imagem" class="submit-button">
   </form>
 
   <div class="preview-container">

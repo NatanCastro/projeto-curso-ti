@@ -9,16 +9,15 @@ export class ImagesService {
   constructor(private readonly prismaService: PrismaService) { }
 
   getAll() {
-    return this.prismaService.imagens.findMany()
+    return this.prismaService.images.findMany()
   }
 
   async excludeOne(id: number) {
-    if (!(await this.prismaService.imagens.findFirst({ where: { id } }))) {
-      return
-    }
     try {
-
-      const data = await this.prismaService.imagens.delete({
+      if (!(await this.prismaService.images.findFirst({ where: { id } }))) {
+        return
+      }
+      const data = await this.prismaService.images.delete({
         where: {
           id
         }

@@ -26,7 +26,7 @@ form.addEventListener('submit', async (e) => {
     body: formData,
   }).then((res) => {
     if (res.status !== 201) {
-      throw new Error('não foi possivel fazer o upload da imagem tente novamente')
+      throw new Error('Não foi possivel fazer o upload da imagem tente novamente')
     }
     Response.redirect('http://192.168.0.5/galeria.php')
   }).catch((e) => {
